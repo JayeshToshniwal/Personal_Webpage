@@ -1,0 +1,221 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #F3EDC8;
+}
+
+header {
+    background-color: #7D0A0A;
+}
+
+.side-menu {
+    >ul {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        align-content: center;
+        align-items: stretch;
+        height: 60px;
+
+        >li {
+            font-size: 1.8rem;
+            color: #EAD196;
+            padding: 10px 35px;
+            transition-property: background-color, border-radius, color;
+            transition-duration: 300ms;
+        }
+    }
+
+}
+
+li:hover {
+    background-color: #BF3131;
+    border-radius: 10px;
+    color: #F3EDC8 !important;
+}
+
+.home-page-grid {
+    height: 700px;
+    display: grid;
+    grid-template-columns: 1fr minmax(300px, 500px);
+    grid-template-rows: 7fr 18fr;
+    margin: 20px;
+}
+
+.circle {
+    background-color: #BF3131;
+    border-radius: 50%;
+}
+
+.profession {
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: flex-start;
+    color: #7D0A0A;
+    align-items: center;
+
+    >h1 {
+        padding-left: 6%;
+    }
+}
+
+.brief-intro {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #7D0A0A;
+    font-size: 2rem;
+    text-align: justify;
+
+    >p {
+        min-width: 400px;
+        width: 65%;
+        padding-left: 6%;
+    }
+}
+
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+    margin-top: 300px;
+
+    >h2 {
+        align-self: flex-start;
+        font-size: 2.5rem;
+        color: #7D0A0A;
+        margin-left: 20%;
+    }
+
+    >.skill {
+        width: 60%;
+        margin: 20px;
+        padding: 50px;
+
+
+        >.skill-name {
+            font-size: 1.8rem;
+            color: #BF3131;
+        }
+
+        >.skill-pic {
+            width: 8%;
+            float: left;
+            margin: 30px;
+        }
+
+        >.skill-para {
+            width: 90%;
+            font-size: 1.5rem;
+            text-align: justify;
+            padding: 15px;
+            margin: 15px;
+            color: #BF3131;
+        }
+    }
+}
+
+.skill:hover {
+    background-color: #EAD196;
+    border-radius: 10px;
+}
+
+
+
+
+.resume {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 300px;
+    margin-bottom: 150px;
+
+    >h2 {
+        font-size: 2.5rem;
+        color: #7D0A0A;
+        margin-right: auto;
+        position: relative;
+        left: 20%;
+    }
+
+    >p {
+        font-size: 1.5rem;
+        color: #BF3131;
+        margin-top: 20px;
+        margin-right: auto;
+        position: relative;
+        left: 20%;
+    }
+
+    >button {
+        width: 200px;
+        height: 70px;
+        border-radius: 15px;
+        border: 1px solid black;
+        align-self: center;
+        background-color: #7D0A0A;
+        margin-top: 50px;
+        transition-property: background-color, color;
+        transition-duration: 300ms;
+
+        >.resume-link {
+            color: #EAD196;
+            color: #F3EDC8;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 100;
+            transition-property: color;
+            transition-duration: 300ms;
+        }
+    }
+
+}
+
+button:hover {
+    background-color: #BF3131;
+
+    >a {
+        color: #EAD196 !important;
+    }
+}
+
+footer {
+    background-color: #7D0A0A;
+    padding: 25px;
+    /* height: 30px; */
+
+    >.contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+
+        >a {
+            text-decoration: none;
+            color: #EAD196;
+            font-size: 1.5rem;
+            padding: 10px 25px;
+            transition-property: background-color, color, border-radius;
+            transition-duration: 300ms;
+        }
+    }
+
+    .tag-line {
+        color: #F3EDC8;
+        text-align: center;
+        font-size: 1.25rem;
+    }
+}
+
+.contact>a:hover {
+    color: #F3EDC8 !important;
+    background-color: #BF3131;
+    border-radius: 15px;
+}
